@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学位英语冲刺站 | 智能练习</title>
+    <link rel="stylesheet" href="styles.css?v=20260703-03">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">学位英语冲刺站</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="study.html">学习</a>
+        <a href="exercises.html">练习</a>
+        <a href="ai.html">AI老师</a>
+        <a href="my.html">我的</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="page-head">
+        <p class="eyebrow">Practice</p>
+        <h1>智能默写和错题本</h1>
+        <p>题库自动读取单词、固定搭配、短句、副词页面。可以英译汉、汉译英、听音默写，错题会自动保存。</p>
+      </section>
+
+      <section class="practice-shell">
+        <aside class="practice-panel">
+          <h2>练习设置</h2>
+          <label class="field-label" for="modeSelect">模式</label>
+          <select id="modeSelect">
+            <option value="en-cn">看英语写中文</option>
+            <option value="cn-en">看中文写英语</option>
+            <option value="dictation">听音默写英语</option>
+            <option value="wrong">只练错题</option>
+          </select>
+
+          <label class="field-label" for="bankSelect">题库</label>
+          <select id="bankSelect">
+            <option value="all">全部</option>
+            <option value="words">单词</option>
+            <option value="phrases">固定搭配</option>
+            <option value="sentences">短句</option>
+            <option value="adverbs">副词</option>
+          </select>
+
+          <label class="field-label" for="voiceSelect">发音</label>
+          <select id="voiceSelect">
+            <option value="">固定英式发音</option>
+          </select>
+
+          <div class="practice-actions">
+            <button id="speakBtn" type="button">播放发音</button>
+          </div>
+
+          <div class="stats-grid">
+            <div><strong id="totalCount">0</strong><span>题库</span></div>
+            <div><strong id="doneCount">0</strong><span>已答</span></div>
+            <div><strong id="correctCount">0</strong><span>正确</span></div>
+            <div><strong id="wrongCount">0</strong><span>错题</span></div>
+          </div>
+        </aside>
+
+        <section class="quiz-card">
+          <div class="quiz-meta">
+            <span id="sourceTag">加载中</span>
+            <span id="progressTag">0 / 0</span>
+          </div>
+          <div class="question-block">
+            <div id="questionLabel" class="block-label">题目</div>
+            <div id="promptText" class="prompt-text">正在读取题库...</div>
+          </div>
+          <div id="hintText" class="hint-text"></div>
+          <label id="answerLabel" class="answer-label" for="answerInput">你的答案</label>
+          <textarea id="answerInput" rows="3" placeholder="在这里输入答案，按 Enter 提交，Shift + Enter 换行"></textarea>
+          <div class="answer-row">
+            <button id="checkBtn" type="button">提交答案</button>
+            <button id="showBtn" type="button">看答案</button>
+            <button id="nextBtn" type="button">下一题</button>
+            <button id="markBtn" type="button">加入错题</button>
+          </div>
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+        </section>
+      </section>
+
+      <section class="band">
+        <div class="section-title-row">
+          <h2>错题本</h2>
+          <button id="clearWrongBtn" type="button" class="quiet-btn">清空错题</button>
+        </div>
+        <div id="wrongList" class="wrong-list"></div>
+      </section>
+    </main>
+
+    <script src="practice.js?v=20260703-03"></script>
+    <script src="app-shell.js?v=20260703-03"></script>
+  </body>
+</html>

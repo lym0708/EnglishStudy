@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学位英语冲刺站 | AI老师</title>
+    <link rel="stylesheet" href="styles.css?v=20260703-03">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">学位英语冲刺站</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="study.html">学习</a>
+        <a href="exercises.html">练习</a>
+        <a href="ai.html">AI老师</a>
+        <a href="my.html">我的</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="page-head">
+        <p class="eyebrow">AI Tutor</p>
+        <h1>AI 英语老师</h1>
+        <p>把你不会的单词、句子、语法和完形题整理成高质量提问。先学会问清楚，AI 才能像老师一样按步骤讲明白。</p>
+      </section>
+
+      <section class="module-grid" aria-label="AI老师模块">
+        <a class="module-card primary" href="#aiTeacherForm">
+          <span>01</span>
+          <strong>AI问答</strong>
+          <p>把不会的问题整理成清楚的提问，适合连续追问。</p>
+        </a>
+        <a class="module-card" href="#aiTeacherForm">
+          <span>02</span>
+          <strong>语法解释</strong>
+          <p>按结构、中文理解、例句、常见错误来讲语法。</p>
+        </a>
+        <a class="module-card" href="#aiTeacherForm">
+          <span>03</span>
+          <strong>单词解释</strong>
+          <p>解释词性、音标、搭配、例句和易混词。</p>
+        </a>
+        <a class="module-card" href="#aiTeacherForm">
+          <span>04</span>
+          <strong>作文批改</strong>
+          <p>把作文按语法、词汇、结构和表达逐项修改。</p>
+        </a>
+      </section>
+
+      <section class="grid two">
+        <article class="card ai-workbench" id="aiTeacherForm">
+          <h2>提问工作台</h2>
+          <label class="field-label" for="aiQuestionType">问题类型</label>
+          <select id="aiQuestionType">
+            <option value="word">单词不会背</option>
+            <option value="grammar">语法看不懂</option>
+            <option value="sentence">句子不会分析</option>
+            <option value="cloze">完形题不会选</option>
+          </select>
+          <label class="field-label" for="aiQuestionInput">你的问题</label>
+          <textarea id="aiQuestionInput" rows="7" placeholder="例如：为什么 He does not like music 这里要用 does？"></textarea>
+          <button id="aiBuildPrompt" type="button">生成提问模板</button>
+        </article>
+
+        <article class="card ai-output-card">
+          <h2>可直接提问的内容</h2>
+          <pre id="aiPromptOutput">先输入问题，再生成适合 AI 老师讲解的提问模板。</pre>
+        </article>
+      </section>
+
+      <section class="band">
+        <h2>推荐问法</h2>
+        <div class="professor-grid">
+          <article class="professor-card"><span>单词</span><p>不要只问“什么意思”，要问词性、搭配、例句和易混词。</p></article>
+          <article class="professor-card"><span>语法</span><p>要求按“结构 - 中文理解 - 例句 - 错误”四步讲。</p></article>
+          <article class="professor-card"><span>完形</span><p>让 AI 先找上下文线索，再判断固定搭配和逻辑关系。</p></article>
+        </div>
+      </section>
+    </main>
+    <script src="app-shell.js?v=20260703-03"></script>
+  </body>
+</html>

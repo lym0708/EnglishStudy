@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学位英语冲刺站 | 今日任务</title>
+    <link rel="stylesheet" href="styles.css?v=20260703-03">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">学位英语冲刺站</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="study.html">学习</a>
+        <a href="exercises.html">练习</a>
+        <a href="ai.html">AI老师</a>
+        <a href="my.html">我的</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="page-head">
+        <p class="eyebrow">Daily Mission</p>
+        <h1>今日英语学习任务</h1>
+        <p>这个页面保留，但定位从“资料页”改成“每日执行页”。每天只需要按顺序完成下面的任务：新词、搭配、语法、短句、错题复习。勾选会保存在本机，第二天自动重新开始。</p>
+      </section>
+
+      <section class="mission-board">
+        <article class="mission-progress">
+          <div>
+            <span id="todayLabel">今日</span>
+            <h2>完成进度</h2>
+          </div>
+          <strong id="missionPercent">0%</strong>
+          <div class="progress-track" aria-label="今日任务完成进度">
+            <span id="missionBar"></span>
+          </div>
+          <p id="missionSummary">完成 0 / 5 项。先从单词开始，别一上来啃语法。</p>
+        </article>
+
+        <article class="mission-focus">
+          <span>今日重点</span>
+          <strong>先稳基础，再扩词汇</strong>
+          <p>零基础最怕乱学。今天只追求“能读、能认、能默写一部分”，不要追求一次全部记住。</p>
+        </article>
+      </section>
+
+      <section class="task-list" aria-label="今日任务清单">
+        <article class="task-item" data-task-id="words">
+          <label><input type="checkbox"> <span>40 个单词</span></label>
+          <p>20 个基础词 + 20 个四/六级词族。重点看音标、词性、中文、搭配和动词变化。</p>
+          <a href="words.html">去背单词</a>
+        </article>
+        <article class="task-item" data-task-id="phrases">
+          <label><input type="checkbox"> <span>10 个固定搭配</span></label>
+          <p>读英文和中文，优先背动词搭配：look up, depend on, pay attention to。</p>
+          <a href="phrases.html">去背搭配</a>
+        </article>
+        <article class="task-item" data-task-id="grammar">
+          <label><input type="checkbox"> <span>1 个语法点</span></label>
+          <p>只看一个结构，然后自己造 5 个句子。今天会一个，比翻很多页更有效。</p>
+          <a href="grammar.html">去看语法</a>
+        </article>
+        <article class="task-item" data-task-id="sentences">
+          <label><input type="checkbox"> <span>10 个短句</span></label>
+          <p>直接背成句子，重点模仿句型，不要只背孤立单词。</p>
+          <a href="sentences.html">去背短句</a>
+        </article>
+        <article class="task-item" data-task-id="practice">
+          <label><input type="checkbox"> <span>15 分钟默写/错题</span></label>
+          <p>看中文写英文、听音默写、错题复练至少做一种。错题会自动沉淀。</p>
+          <a href="practice.html">去练习</a>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h2>2 小时标准版</h2>
+          <div class="timeline-list">
+            <div><b>00:00-00:35</b><span>单词 40 个，先读音标再看意思。</span></div>
+            <div><b>00:35-00:55</b><span>固定搭配 10 个，英文和中文一起读。</span></div>
+            <div><b>00:55-01:20</b><span>语法 1 个点，做 5 个句子。</span></div>
+            <div><b>01:20-01:45</b><span>短句 10 个，直接读熟。</span></div>
+            <div><b>01:45-02:00</b><span>智能练习和错题复盘。</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>时间不够版</h2>
+          <div class="timeline-list compact">
+            <div><b>30 分钟</b><span>单词 20 个 + 搭配 5 个 + 默写 5 分钟。</span></div>
+            <div><b>60 分钟</b><span>单词 30 个 + 语法 1 个 + 短句 5 个。</span></div>
+            <div><b>90 分钟</b><span>标准版少做一半短句，保留错题复习。</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="band">
+        <h2>12 月前节奏</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>阶段</th><th>目标</th><th>每天重点</th><th>验收标准</th></tr></thead>
+            <tbody>
+              <tr><td>第 1 阶段</td><td>零基础打底</td><td>基础 1000 词 + 基本句型 + 高频时态</td><td>能看懂简单句，能判断主谓宾</td></tr>
+              <tr><td>第 2 阶段</td><td>学位英语核心</td><td>高频 2000-3000 词 + 固定搭配 + 完形</td><td>完形能根据搭配排除选项</td></tr>
+              <tr><td>第 3 阶段</td><td>四级方向扩展</td><td>词族、阅读长句、从句、被动语态</td><td>阅读能抓主旨和定位信息</td></tr>
+              <tr><td>第 4 阶段</td><td>六级方向识别</td><td>抽象词、学术词、作文高级替换词</td><td>复杂阅读不被生词完全卡死</td></tr>
+              <tr><td>考前 30 天</td><td>真题冲刺</td><td>真题词、错题搭配、作文模板</td><td>形成固定答题顺序</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="must.js?v=20260703-03"></script>
+    <script src="app-shell.js?v=20260703-03"></script>
+  </body>
+</html>
